@@ -1,0 +1,87 @@
+{
+  // Configurações do editor
+  "editor.wordWrap": "off", // Habilita a quebra automática de linha
+  "editor.fontSize": 13, // Define o tamanho da fonte do editor
+  // "editor.lineHeight": 20, // Define a altura da linha
+  "editor.tabSize": 2, // Define o tamanho da tabulação para 2 espaços
+  "editor.bracketPairColorization.enabled": true, // Habilita a colorização de pares de colchetes
+  "editor.guides.bracketPairs": true, // Habilita guias de pares de colchetes
+  "editor.minimap.enabled": false, // Desabilita o minimapa
+  "editor.formatOnSave": true, // Desabilita a formatação automática ao salvar
+  "editor.formatOnPaste": false, // Desabilita a formatação automática ao colar
+
+  "files.autoSave": "afterDelay", // Define o auto salvamento após um atraso
+  "files.autoSaveDelay": 1000, // Define o atraso do auto salvamento em milissegundos
+
+  // Configurações do explorer
+  "explorer.compactFolders": false, // Desabilita a compactação de pastas no explorer
+
+  // Configurações do workbench
+  "workbench.editor.enablePreview": false, // Desabilita a visualização de arquivos no editor
+  "workbench.iconTheme": "material-icon-theme", // Define o tema de ícones
+  // "workbench.colorTheme": "Omni", // Define o tema de cores
+  "workbench.colorTheme": "Dracula Theme", // Define o tema de cores
+
+  // Configurações do prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Define o prettier como formatador padrão
+  // "editor.defaultFormatter": "Prisma.prisma", // Define o Prisma como formatador padrão
+  "prettier.enable": true, // Habilita o prettier
+  "prettier.singleQuote": false, // Define aspas duplas para strings
+  "prettier.semi": true, // Remove ponto e vírgula no final das linhas
+  "prettier.tabWidth": 2, // Define o tamanho da tabulação para o prettier
+  "prettier.endOfLine": "auto",  // Final de linha automático
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.BracketSameLine": false,
+  "prettier.useTabs": false,
+  // Configurações específicas para JavaScript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Configurações específicas para React JavaScript
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Configurações específicas para React TypeScript
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Configurações do ESLint
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": "${workspaceFolder}/eslint.config.js" // Certifique-se de que o caminho está correto
+  },
+  "prettier.requireConfig": true, // Garante que Prettier use o arquivo de configuração
+  "prettier.eslintIntegration": true, // Integra Prettier com ESLint
+  "javascript.suggest.autoImports": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+
+
+  // Configurações do Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescript": "typescriptreact",
+    "typescriptreact": "typescriptreact"
+  },
+
+  // Configurações do terminal
+  // "terminal.integrated.fontSize": 16, // Define o tamanho da fonte do terminal
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "source": "Git Bash" // Define o perfil do terminal para Git Bash
+    }
+  },
+  // "terminal.integrated.defaultProfile.windows": "Git Bash", // Define Git Bash como perfil padrão do terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash" // Define WSL como perfil padrão do terminal
+  // "window.zoomLevel": 1 // Define o nível de zoom da janela
+}
