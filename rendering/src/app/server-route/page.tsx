@@ -1,11 +1,15 @@
 import { ImageSlider } from "@/components/ImageSlider";
 import { serverSideFunction } from "@/utils/server-utils";
+import { clientSideFunction } from '@/utils/client-utils';
+
 
 export default function ServerRoutePage() {
-  const result = serverSideFunction();
+  const resultSever = serverSideFunction();
+  // const resultClient = clientSideFunction();
+  
   return (
     <>
-      Server Route {result}
+      <h1>Server Route {resultSever}</h1>
       <ImageSlider />
     </>
   )
